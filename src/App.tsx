@@ -9,15 +9,17 @@ import {
 } from "react-router-dom";
 import CustomNavbar from "./components/Navbar";
 import Footer from "./components/Footer";
+import SignUp from "./components/Signup";
 
 function App() {
   return (
     <Router>
       <CustomNavbar />
-      <Footer />{" "}
       <Routes>
         <Route path="/signin" Component={SignIn} />
+        <Route path="/signup" Component={SignUp} />
       </Routes>
+      <Footer />{" "}
     </Router>
   );
 }
